@@ -68,3 +68,14 @@ This site was built using [GitHub Pages](https://pages.github.com/).
   [![Linux Build][travis-image]][travis-url]
   [![Windows Build][appveyor-image]][appveyor-url]
   [![Test Coverage][coveralls-image]][coveralls-url]
+
+```js
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+
+app.listen(3000)
+```
